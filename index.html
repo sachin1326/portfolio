@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachin - portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sachin's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi My Name is <span class="purple">Sachin</span>
+          <div>and i am a passionate</div>
+          <div>Web Developer</div>
+          <!-- Element to contain animated typing -->
+          <span id="element"></span>
+
+          <div class="buttons">
+            <a href="CV.zip"><button class="btn">Download Resume</button></a>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <div><img src="dp.png" alt=""></div>
+         
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondsection">
+        <h1>=> Work Experience</h1>
+        <ul>
+          <li>Fresher</li>
+        </ul>
+
+        <h1>=> Skills</h1>
+        <ul>
+          <li>Frontend</li>
+          <li>Api Building</li>
+          <li>Git/Github</li>
+          <li>DBMS</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-rights">
+        copyright &#169;www.sachinsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Web Developer", "Api Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
